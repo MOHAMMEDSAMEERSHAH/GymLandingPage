@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamFitness</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(img/background.jpg);
+        }
+
+        .left {
+            position: absolute;
+            top: 15px;
+            left: 30px;
+            color: white;
+            /* border: 2px solid red; */
+            display: inline-block;
+        }
+
+        .left img {
+            display: block;
+            filter: invert(100%);
+            width: 44px;
+            margin: auto;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 20px;
+
+        }
+
+        .midle {
+            /* border: 2px solid blue; */
+            display: block;
+            width: 42%;
+            margin: 20px auto;
+            height: 20vh;
+        }
+
+        .navbar {
+            display: block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 20px 20px;
+            color: rgb(26, 26, 26);
+            /* margin: 0px 5px; */
+        }
+
+        .navbar li a:hover,
+        .navbar li a:hover {
+            color: rgb(204, 71, 71);
+            text-decoration: underline;
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            display: inline-block;
+        }
+        .right button:hover{
+            color: cornsilk;
+            background-color: darkorchid;
+        }
+
+        .btn {
+            margin: 0px 10px;
+            padding: 7px 10px;
+            background-color: rgb(51, 51, 51);
+            border-radius: 10px;
+            font-size: 13px;
+            cursor: pointer;
+
+        }
+
+        .container{
+            /* border: 3px solid tomato; */
+            margin: 52px 68px;
+            width: 34%;
+            padding: 15px 25px;
+            border-radius: 20px ;
+            text-align: center;
+        }
+        .form-sam input{
+            padding: 18px 75px;
+            margin: 3px;
+            text-align: center;
+            border-radius: 10px;
+            
+        }
+        .side{
+            padding: 10px 0px;
+            font-size: 25px;
+            color: rgb(33, 34, 34);
+        }
+        .footer{
+            background-color: black;
+            padding-top: 25px;
+            height: 50px;
+            color: white;
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>SamFitness</div>
+        </div>
+        <div class="midle">
+            <ul class="navbar">
+                <li><a href="https://www.facebook.com/profile.php?id=100012119530743" target="_blank">Home</a></li>
+                <li><a href="#">Fitness method</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">contact here</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+        <div class="container">
+            <div class="side">fill the form for joining the Fitness club</div>
+            <form action="backend.php">
+                <div class="form-sam">
+                    <input type="text" name="" placeholder="enter your name ">
+                </div>
+                <div class="form-sam">
+                    <input type="text" name="" placeholder="enter your phone number">
+                </div>
+                <div class="form-sam">
+                    <input type="text" name="" placeholder="enter your Email">
+                </div>
+                <div class="form-sam">
+                    <input type="text" name="" placeholder="enter your age">
+                </div>
+                <div class="form-sam">
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer-s">
+        <footer class="footer">
+            2022 &#64; copyrights developed by-sachin bhumare
+        </footer>
+    </div>
+</body>
+
+</html>
